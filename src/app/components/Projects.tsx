@@ -42,21 +42,21 @@ function ProjectCard({
       {/* Content */}
       <div className="relative z-10 h-full flex flex-col justify-between p-10">
         <div className="flex justify-between items-start">
-          <span className="text-[10px] tracking-[0.2em] uppercase text-white/40 font-light">
+          <span className="text-[12px] tracking-[0.2em] uppercase text-white/56 font-normal">
             {category}
           </span>
-          <span className="text-[10px] tracking-[0.2em] uppercase text-white/40 font-light">
+          <span className="text-[12px] tracking-[0.2em] uppercase text-white/56 font-normal">
             {String(index + 1).padStart(2, "0")}
           </span>
         </div>
 
         <div>
-          <h3 className="text-[32px] lg:text-[36px] font-light tracking-tight text-white mb-3">
+          <h3 className="text-[32px] lg:text-[36px] font-normal tracking-tight text-white mb-3">
             {title}
           </h3>
-          <p className="text-[14px] font-light text-white/60 mb-6">{location}</p>
-          <div className="flex items-center gap-2 text-white/50 group-hover:text-white transition-colors duration-300">
-            <span className="text-[12px] tracking-wide font-light">
+          <p className="text-[16px] font-normal text-white/72 mb-6">{location}</p>
+          <div className="flex items-center gap-2 text-white/68 group-hover:text-white transition-colors duration-300">
+            <span className="text-[12px] tracking-wide font-normal">
               View Project
             </span>
             <ArrowRight className="w-4 h-4 group-hover:translate-x-2 transition-transform duration-300" />
@@ -113,11 +113,11 @@ export function Projects() {
           className="mb-20"
         >
           <div className="mb-6">
-            <span className="text-[11px] tracking-[0.2em] uppercase text-white/40 font-light">
+            <span className="text-[12px] tracking-[0.2em] uppercase text-white/56 font-normal">
               Portfolio
             </span>
           </div>
-          <h2 className="text-[42px] lg:text-[56px] font-extralight leading-[1.1] tracking-tight text-white">
+          <h2 className="text-[42px] lg:text-[56px] font-medium leading-[1.12] tracking-tight text-white">
             Selected Projects
           </h2>
         </motion.div>

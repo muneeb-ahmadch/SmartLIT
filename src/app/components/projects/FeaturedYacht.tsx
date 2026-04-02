@@ -31,14 +31,14 @@ export function FeaturedYacht() {
               className="max-w-xl"
             >
               <div className="mb-6">
-                <span className="text-[11px] tracking-[0.2em] uppercase text-white/40 font-light">
+                <span className="text-[12px] tracking-[0.2em] uppercase text-white/56 font-normal">
                   Featured Yacht Project
                 </span>
               </div>
-            <h2 className="text-[42px] lg:text-[56px] font-extralight leading-[1.15] tracking-tight text-white mb-10">
+            <h2 className="text-[42px] lg:text-[56px] font-medium leading-[1.15] tracking-tight text-white mb-10">
               Marine-grade guest experience
             </h2>
-            <div className="space-y-6 text-white/65 text-[15px] lg:text-[16px] font-light leading-[1.8] mb-10">
+            <div className="space-y-6 text-white/78 text-[17px] lg:text-[18px] font-normal leading-[1.8] mb-10">
               <p>
                 Multi-zone yacht environments require lighting, climate, media,
                 and security to remain dependable despite space constraints and
@@ -61,7 +61,7 @@ export function FeaturedYacht() {
               >
                 <Link
                   to="/contact"
-                  className="group px-8 py-4 border border-white/20 text-white text-[13px] tracking-wide font-light hover:border-white/40 hover:bg-white/5 transition-all duration-300 inline-flex items-center gap-2"
+                  className="group px-8 py-4 border border-white/20 text-white text-[16px] tracking-wide font-medium hover:border-white/40 hover:bg-white/5 transition-all duration-300 inline-flex items-center gap-2"
                 >
                   Discuss a specialist brief
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />

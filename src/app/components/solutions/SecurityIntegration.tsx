@@ -39,14 +39,14 @@ export function SecurityIntegration() {
             className="order-1 max-w-xl lg:order-2 lg:justify-self-end"
           >
             <div className="mb-6">
-              <span className="text-[11px] tracking-[0.2em] uppercase text-white/40 font-light">
+              <span className="text-[12px] tracking-[0.2em] uppercase text-white/56 font-normal">
                 Solution 06
               </span>
             </div>
-            <h2 className="text-[42px] lg:text-[56px] font-extralight leading-[1.15] tracking-tight text-white mb-10">
+            <h2 className="text-[42px] lg:text-[56px] font-medium leading-[1.15] tracking-tight text-white mb-10">
               Security Integration
             </h2>
-            <div className="space-y-6 text-white/65 text-[15px] lg:text-[16px] font-light leading-[1.8] mb-10">
+            <div className="space-y-6 text-white/78 text-[17px] lg:text-[18px] font-normal leading-[1.8] mb-10">
               <p className="text-white/85">
                 Protection should feel dependable, discreet, and easy to
                 understand.
@@ -68,14 +68,14 @@ export function SecurityIntegration() {
                   className="flex items-center gap-3"
                 >
                   <div className="w-1 h-1 bg-white/40 rounded-full" />
-                  <p className="text-[15px] font-light text-white/80">
+                  <p className="text-[17px] font-normal text-white/80">
                     {feature}
                   </p>
                 </motion.div>
               ))}
             </div>
 
-            <div className="space-y-6 text-white/65 text-[15px] lg:text-[16px] font-light leading-[1.8]">
+            <div className="space-y-6 text-white/78 text-[17px] lg:text-[18px] font-normal leading-[1.8]">
               <p>
                 Security becomes more valuable when it sits inside a coherent
                 control system instead of another isolated app.

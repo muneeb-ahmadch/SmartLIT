@@ -17,14 +17,14 @@ export function BrandPhilosophy() {
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
             <div className="mb-6">
-              <span className="text-[11px] tracking-[0.2em] uppercase text-white/40 font-light">
+              <span className="text-[12px] tracking-[0.2em] uppercase text-white/56 font-normal">
                 Design Philosophy
               </span>
             </div>
-            <h2 className="text-[42px] lg:text-[52px] font-extralight leading-[1.15] tracking-tight text-white mb-10">
+            <h2 className="text-[42px] lg:text-[52px] font-medium leading-[1.15] tracking-tight text-white mb-10">
               Technology should serve the atmosphere.
             </h2>
-            <div className="space-y-6 text-white/65 text-[15px] lg:text-[16px] font-light leading-[1.8]">
+            <div className="space-y-6 text-white/78 text-[17px] lg:text-[18px] font-normal leading-[1.8]">
               <p>
                 Every residence carries its own rhythm. Entertaining,
                 unwinding, hosting family, and arriving home all ask different

@@ -29,20 +29,20 @@ export function BrandsHero() {
         >
           <div className="max-w-5xl">
             <div className="mb-8 flex flex-wrap items-center gap-4">
-              <span className="text-[11px] font-light uppercase tracking-[0.22em] text-white/45">
+              <span className="text-[12px] font-medium uppercase tracking-[0.22em] text-white/60">
                 Brands & Technology
               </span>
               <span className="hidden h-px w-16 bg-white/15 sm:block" />
-              <span className="text-[11px] font-light uppercase tracking-[0.2em] text-white/32">
+              <span className="text-[12px] font-medium uppercase tracking-[0.2em] text-white/32">
                 Curated For Villas, Media Rooms, Design-Led Living
               </span>
             </div>
 
-            <h1 className="max-w-4xl text-[46px] font-extralight leading-[1.02] tracking-tight text-white sm:text-[58px] lg:text-[82px]">
+            <h1 className="max-w-4xl text-[46px] font-medium leading-[1.02] tracking-tight text-white sm:text-[58px] lg:text-[82px]">
               Premium smart home brands, specified with purpose.
             </h1>
 
-            <p className="mt-8 max-w-2xl text-[15px] font-light leading-[1.8] text-white/68 lg:text-[17px]">
+            <p className="mt-8 max-w-2xl text-[17px] font-normal leading-[1.8] text-white/80 lg:text-[17px]">
               Smart Lit works with a tightly edited partner ecosystem so each
               layer of the home, from control to cinema performance, feels
               coherent and dependable in Abu Dhabi and across the UAE.
@@ -50,7 +50,7 @@ export function BrandsHero() {
           </div>
 
           <div className="rounded-[30px] border border-white/10 bg-black/30 p-6 backdrop-blur-md sm:p-8">
-            <p className="mb-8 text-[11px] uppercase tracking-[0.22em] text-white/35">
+            <p className="mb-8 text-[12px] uppercase tracking-[0.22em] text-white/52">
               Selected Brand Layers
             </p>
             <div className="space-y-5">
@@ -66,10 +66,10 @@ export function BrandsHero() {
                   }}
                   className="border-b border-white/10 pb-5 last:border-b-0 last:pb-0"
                 >
-                  <p className="text-[11px] uppercase tracking-[0.18em] text-white/35">
+                  <p className="text-[12px] uppercase tracking-[0.18em] text-white/52">
                     {item.label}
                   </p>
-                  <p className="mt-2 text-[22px] font-extralight leading-[1.25] text-white sm:text-[26px]">
+                  <p className="mt-2 text-[22px] font-medium leading-[1.25] text-white sm:text-[26px]">
                     {item.value}
                   </p>
                 </motion.div>

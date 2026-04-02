@@ -216,7 +216,7 @@ function ClimateDemo() {
             </p>
           </div>
           <div className="ml-auto text-right text-white">
-            <p className="text-[13px] uppercase tracking-[0.08em] text-[#a6aebc] sm:text-[15px] lg:text-[17px]">
+            <p className="text-[16px] uppercase tracking-[0.08em] text-[#a6aebc] sm:text-[17px] lg:text-[17px]">
               FAN
               <span className="ml-1 inline-block -translate-y-px text-white">⌄</span>
             </p>
@@ -346,7 +346,7 @@ function ClimateDemo() {
           <button
             type="button"
             onClick={() => adjustTemperature(targetTemp - 1)}
-            className="flex h-16 w-12 shrink-0 items-center justify-center rounded-r-[28px] border border-[#567098] border-l-0 text-[34px] font-light text-white/85 transition-colors duration-300 hover:text-white sm:h-18 sm:w-14 sm:text-[42px] lg:h-20 lg:w-16 lg:text-[48px]"
+            className="flex h-16 w-12 shrink-0 items-center justify-center rounded-r-[28px] border border-[#567098] border-l-0 text-[34px] font-normal text-white/85 transition-colors duration-300 hover:text-white sm:h-18 sm:w-14 sm:text-[42px] lg:h-20 lg:w-16 lg:text-[48px]"
             aria-label="Decrease temperature"
           >
             -
@@ -359,7 +359,7 @@ function ClimateDemo() {
           <button
             type="button"
             onClick={() => adjustTemperature(targetTemp + 1)}
-            className="flex h-16 w-12 shrink-0 items-center justify-center rounded-l-[28px] border border-[#567098] border-r-0 text-[34px] font-light text-white/85 transition-colors duration-300 hover:text-white sm:h-18 sm:w-14 sm:text-[42px] lg:h-20 lg:w-16 lg:text-[48px]"
+            className="flex h-16 w-12 shrink-0 items-center justify-center rounded-l-[28px] border border-[#567098] border-r-0 text-[34px] font-normal text-white/85 transition-colors duration-300 hover:text-white sm:h-18 sm:w-14 sm:text-[42px] lg:h-20 lg:w-16 lg:text-[48px]"
             aria-label="Increase temperature"
           >
             +
@@ -426,22 +426,22 @@ function EntertainmentDemo() {
               >
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_18%_16%,rgba(255,196,160,0.4),transparent_24%),radial-gradient(circle_at_76%_72%,rgba(33,71,162,0.34),transparent_28%),linear-gradient(140deg,rgba(255,255,255,0.02),rgba(255,255,255,0))]" />
                 <div className="absolute inset-0 opacity-55 [background-image:linear-gradient(115deg,rgba(255,255,255,0.06),transparent_26%,transparent_74%,rgba(255,255,255,0.04)),radial-gradient(circle_at_48%_52%,rgba(80,79,182,0.28),transparent_15%),radial-gradient(circle_at_64%_18%,rgba(255,255,255,0.08),transparent_10%)]" />
-                <div className="absolute left-[10%] top-[8%] text-[9px] font-semibold uppercase tracking-[0.42em] text-white/78 sm:text-[10px] xl:text-[11px] xl:tracking-[0.52em]">
+                <div className="absolute left-[10%] top-[8%] text-[9px] font-semibold uppercase tracking-[0.42em] text-white/78 sm:text-[12px] xl:text-[12px] xl:tracking-[0.52em]">
                   S
                 </div>
-                <div className="absolute right-[8%] top-[6.5%] text-[8px] font-semibold uppercase tracking-[0.32em] text-white/78 sm:text-[9px] xl:text-[10px] xl:tracking-[0.5em]">
+                <div className="absolute right-[8%] top-[6.5%] text-[8px] font-semibold uppercase tracking-[0.32em] text-white/78 sm:text-[9px] xl:text-[12px] xl:tracking-[0.5em]">
                   {track.artworkSubtitle}
                 </div>
                 <div className="absolute left-1/2 top-[50.5%] -translate-x-1/2 -translate-y-1/2 text-center">
-                  <p className="text-[clamp(2rem,9vw,3.125rem)] font-light tracking-[0.26em] text-white/92 sm:tracking-[0.3em] xl:tracking-[0.34em]">
+                  <p className="text-[clamp(2rem,9vw,3.125rem)] font-normal tracking-[0.26em] text-white/92 sm:tracking-[0.3em] xl:tracking-[0.34em]">
                     {track.artworkTitle}
                   </p>
-                  <p className="mt-3 text-[12px] tracking-[0.35em] text-white/65 sm:mt-4 sm:text-[14px] xl:text-[15px] xl:tracking-[0.5em]">...</p>
+                  <p className="mt-3 text-[12px] tracking-[0.35em] text-white/78 sm:mt-4 sm:text-[16px] xl:text-[17px] xl:tracking-[0.5em]">...</p>
                 </div>
                 <div className="absolute bottom-[16%] left-1/2 h-[14px] w-[14px] -translate-x-1/2 rotate-45 border border-white/65 sm:h-[15px] sm:w-[15px] xl:h-[16px] xl:w-[16px]">
                   <div className="absolute inset-[3px] border border-white/45" />
                 </div>
-                <div className="absolute bottom-[11%] left-1/2 w-[58%] -translate-x-1/2 border border-white/22 px-2 py-1.5 text-[5px] uppercase tracking-[0.14em] text-white/45 sm:w-[54%] sm:px-3 sm:py-2 sm:text-[6px] sm:tracking-[0.2em]">
+                <div className="absolute bottom-[11%] left-1/2 w-[58%] -translate-x-1/2 border border-white/22 px-2 py-1.5 text-[5px] uppercase tracking-[0.14em] text-white/60 sm:w-[54%] sm:px-3 sm:py-2 sm:text-[6px] sm:tracking-[0.2em]">
                   Curated sound experiences
                 </div>
               </div>
@@ -451,7 +451,7 @@ function EntertainmentDemo() {
 
         <div className="flex w-full min-w-0 flex-col items-center justify-center text-center">
           <div>
-            <p className="text-[14px] font-semibold uppercase tracking-[0.02em] text-[#989daa] sm:text-[16px] xl:text-[17px]">
+            <p className="text-[16px] font-semibold uppercase tracking-[0.02em] text-[#989daa] sm:text-[16px] xl:text-[17px]">
               {track.album}
             </p>
             <h5 className="mt-4 text-[clamp(2rem,7vw,2.875rem)] font-semibold leading-none tracking-[-0.035em] text-[#f5f4f2]">
@@ -474,7 +474,7 @@ function EntertainmentDemo() {
               className="[&_[data-slot=slider-range]]:bg-[#89919d] [&_[data-slot=slider-thumb]]:size-6 [&_[data-slot=slider-thumb]]:border-[#f2efeb] [&_[data-slot=slider-thumb]]:bg-[#f2efeb] [&_[data-slot=slider-thumb]]:shadow-[0_0_0_1px_rgba(0,0,0,0.15)] [&_[data-slot=slider-track]]:h-[8px] [&_[data-slot=slider-track]]:bg-white/14 sm:[&_[data-slot=slider-thumb]]:size-7 sm:[&_[data-slot=slider-track]]:h-[10px]"
               aria-label="Track progress"
             />
-            <div className="mt-3 flex items-center justify-between text-[15px] font-semibold tracking-[-0.03em] text-[#f2efeb] sm:text-[18px] xl:text-[20px]">
+            <div className="mt-3 flex items-center justify-between text-[17px] font-semibold tracking-[-0.03em] text-[#f2efeb] sm:text-[18px] xl:text-[20px]">
               <span>{formatDuration(elapsedSeconds)}</span>
               <span>{formatDuration(track.duration)}</span>
             </div>
@@ -630,14 +630,14 @@ export function LithomeShowcase() {
           <div className="absolute inset-0 bg-gradient-to-r from-black/18 via-transparent to-black/18" />
           <div className="relative mx-auto max-w-[1440px] px-8 py-24 lg:px-16 lg:py-32">
             <div className="mb-6">
-              <span className="text-[11px] font-light uppercase tracking-[0.2em] text-white/45">
+              <span className="text-[12px] font-medium uppercase tracking-[0.2em] text-white/60">
                 Unified Control
               </span>
             </div>
-            <h2 className="mb-10 text-[38px] font-extralight leading-[1.12] tracking-tight text-white sm:text-[44px] lg:text-[56px]">
+            <h2 className="mb-10 text-[38px] font-medium leading-[1.12] tracking-tight text-white sm:text-[44px] lg:text-[56px]">
               One interface for the way you live.
             </h2>
-            <div className="mx-auto max-w-3xl space-y-6 text-[15px] font-light leading-[1.8] text-white/72 lg:text-[16px]">
+            <div className="mx-auto max-w-3xl space-y-6 text-[17px] font-normal leading-[1.8] text-white/72 lg:text-[18px]">
               <p>
                 The best smart home technology is not defined by how much it can
                 do. It is defined by how little effort it asks from you.
@@ -664,10 +664,10 @@ export function LithomeShowcase() {
         >
           <div className="mb-8 flex flex-col gap-6 border-b border-white/8 pb-8 lg:flex-row lg:items-end lg:justify-between">
             <div className="max-w-2xl">
-              <p className="text-[11px] uppercase tracking-[0.2em] text-white/35">
+              <p className="text-[12px] uppercase tracking-[0.2em] text-white/52">
                 Experience preview
               </p>
-              <h3 className="mt-4 text-[28px] font-extralight tracking-tight text-white lg:text-[36px]">
+              <h3 className="mt-4 text-[28px] font-medium tracking-tight text-white lg:text-[36px]">
                 Explore how a connected villa can feel in daily use.
               </h3>
             </div>
@@ -681,7 +681,7 @@ export function LithomeShowcase() {
                   className={`rounded-full border px-4 py-2 text-[12px] tracking-[0.16em] transition-all duration-300 ${
                     activeIndex === index
                       ? "border-white/35 bg-white text-black"
-                      : "border-white/10 bg-white/[0.02] text-white/60 hover:border-white/25 hover:text-white"
+                      : "border-white/10 bg-white/[0.02] text-white/72 hover:border-white/25 hover:text-white"
                   }`}
                   aria-label={`Go to ${slide.title}`}
                   aria-pressed={activeIndex === index}
@@ -703,13 +703,13 @@ export function LithomeShowcase() {
                   <div className="grid gap-8 xl:grid-cols-[0.44fr_0.56fr] xl:gap-12">
                     <div className="flex flex-col justify-between rounded-[28px] border border-white/8 bg-black/25 p-6 xl:p-8">
                       <div>
-                        <p className="text-[11px] uppercase tracking-[0.2em] text-white/35">
+                        <p className="text-[12px] uppercase tracking-[0.2em] text-white/52">
                           {slide.eyebrow}
                         </p>
-                        <h4 className="mt-4 text-[34px] font-extralight leading-[1.08] tracking-tight text-white xl:text-[46px]">
+                        <h4 className="mt-4 text-[34px] font-medium leading-[1.08] tracking-tight text-white xl:text-[46px]">
                           {slide.title}
                         </h4>
-                        <p className="mt-6 max-w-md text-[15px] font-light leading-[1.8] text-white/65 xl:text-[16px]">
+                        <p className="mt-6 max-w-md text-[17px] font-normal leading-[1.8] text-white/78 xl:text-[18px]">
                           {slide.description}
                         </p>
                       </div>
@@ -755,7 +755,7 @@ export function LithomeShowcase() {
           transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
           className="mt-20 text-center lg:mt-24"
         >
-          <p className="text-[15px] font-light italic text-white/50 lg:text-[16px]">
+          <p className="text-[17px] font-normal italic text-white/68 lg:text-[18px]">
             Elegant control. Clearer living.
           </p>
         </motion.div>

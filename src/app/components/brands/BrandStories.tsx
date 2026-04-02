@@ -100,16 +100,16 @@ function FeaturedBrandPanel({
               className={`flex flex-col justify-between p-8 sm:p-10 lg:p-12 ${index % 2 === 1 ? "lg:order-1" : ""}`}
             >
               <div>
-                <span className="text-[11px] uppercase tracking-[0.22em] text-white/35">
+                <span className="text-[12px] uppercase tracking-[0.22em] text-white/52">
                   {brand.category}
                 </span>
-                <h2 className="mt-5 text-[38px] font-extralight leading-[1.05] tracking-tight text-white sm:text-[48px] lg:text-[60px]">
+                <h2 className="mt-5 text-[38px] font-medium leading-[1.08] tracking-tight text-white sm:text-[48px] lg:text-[60px]">
                   {brand.name}
                 </h2>
-                <p className="mt-6 max-w-xl text-[18px] font-light leading-[1.65] text-white/72 sm:text-[20px]">
+                <p className="mt-6 max-w-xl text-[18px] font-normal leading-[1.65] text-white/72 sm:text-[20px]">
                   {brand.statement}
                 </p>
-                <p className="mt-5 max-w-xl text-[15px] font-light leading-[1.8] text-white/60">
+                <p className="mt-5 max-w-xl text-[17px] font-normal leading-[1.8] text-white/72">
                   Smart Lit specifies {brand.name} where its strengths clearly
                   support the brief, rather than treating the brand list as a
                   showroom in itself.
@@ -122,10 +122,10 @@ function FeaturedBrandPanel({
                     key={note}
                     className="rounded-[22px] border border-white/10 bg-white/[0.03] p-5"
                   >
-                    <p className="text-[13px] uppercase tracking-[0.16em] text-white/38">
+                    <p className="text-[16px] uppercase tracking-[0.16em] text-white/38">
                       Focus
                     </p>
-                    <p className="mt-3 text-[17px] font-extralight leading-[1.45] text-white/88">
+                    <p className="mt-3 text-[17px] font-medium leading-[1.45] text-white/88">
                       {note}
                     </p>
                   </div>
@@ -162,10 +162,10 @@ export function BrandStories() {
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.8, ease: "easeOut" }}
             >
-              <span className="text-[11px] uppercase tracking-[0.22em] text-white/35">
+              <span className="text-[12px] uppercase tracking-[0.22em] text-white/52">
                 Extended Brand Matrix
               </span>
-              <h2 className="mt-5 text-[34px] font-extralight leading-[1.12] tracking-tight text-white sm:text-[42px] lg:text-[54px]">
+              <h2 className="mt-5 text-[34px] font-medium leading-[1.12] tracking-tight text-white sm:text-[42px] lg:text-[54px]">
                 Additional brands with specific technical roles.
               </h2>
             </motion.div>
@@ -174,7 +174,7 @@ export function BrandStories() {
               initial={{ opacity: 0, y: 28 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.8, delay: 0.1, ease: "easeOut" }}
-            className="max-w-3xl text-[15px] font-light leading-[1.8] text-white/64 lg:justify-self-end lg:text-[16px]"
+            className="max-w-3xl text-[17px] font-normal leading-[1.8] text-white/76 lg:justify-self-end lg:text-[18px]"
           >
             Every additional brand is chosen for a defined function inside the
             system. That discipline is what keeps the final experience clean,
@@ -195,7 +195,7 @@ export function BrandStories() {
                 }}
                 className="rounded-[28px] border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.04),rgba(255,255,255,0.015))] p-6 sm:p-7"
               >
-                <p className="text-[11px] uppercase tracking-[0.18em] text-white/35">
+                <p className="text-[12px] uppercase tracking-[0.18em] text-white/52">
                   {group.category}
                 </p>
                 <div className="mt-8 space-y-4">
@@ -204,7 +204,7 @@ export function BrandStories() {
                       key={brand}
                       className="border-b border-white/8 pb-4 last:border-b-0 last:pb-0"
                     >
-                      <p className="text-[24px] font-extralight leading-[1.2] text-white">
+                      <p className="text-[24px] font-medium leading-[1.2] text-white">
                         {brand}
                       </p>
                     </div>

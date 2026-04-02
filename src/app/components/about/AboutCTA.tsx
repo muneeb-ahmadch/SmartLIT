@@ -36,14 +36,14 @@ export function AboutCTA() {
             className="mb-16"
           >
             <div className="mb-6">
-              <span className="text-[11px] tracking-[0.2em] uppercase text-white/40 font-light">
+              <span className="text-[12px] tracking-[0.2em] uppercase text-white/56 font-normal">
                 Next Step
               </span>
             </div>
-            <h2 className="text-[42px] lg:text-[56px] font-extralight leading-[1.15] tracking-tight text-white mb-10">
+            <h2 className="text-[42px] lg:text-[56px] font-medium leading-[1.15] tracking-tight text-white mb-10">
               Ready to shape the brief?
             </h2>
-            <div className="space-y-4 text-[15px] lg:text-[16px] font-light leading-[1.8] text-white/65">
+            <div className="space-y-4 text-[17px] lg:text-[18px] font-normal leading-[1.8] text-white/78">
               <p>
                 If you are planning a new villa, renovation, or dedicated media
                 space, we can help define the right level of integration before
@@ -72,8 +72,8 @@ export function AboutCTA() {
                       href={`mailto:${SITE_EMAIL}?subject=Project%20Brief`}
                       className="group px-6 py-4 border border-white/20 text-white hover:border-white/40 hover:bg-white/5 transition-all duration-300 flex items-center justify-center gap-3"
                     >
-                      <Icon className="w-4 h-4 text-white/40 group-hover:text-white/70 transition-colors" />
-                      <span className="text-[13px] tracking-wide font-light">
+                      <Icon className="w-4 h-4 text-white/56 group-hover:text-white/78 transition-colors" />
+                      <span className="text-[16px] tracking-wide font-medium">
                         {option.label}
                       </span>
                     </a>
@@ -82,8 +82,8 @@ export function AboutCTA() {
                       href={`mailto:${SITE_EMAIL}`}
                       className="group px-6 py-4 border border-white/20 text-white hover:border-white/40 hover:bg-white/5 transition-all duration-300 flex items-center justify-center gap-3"
                     >
-                      <Icon className="w-4 h-4 text-white/40 group-hover:text-white/70 transition-colors" />
-                      <span className="text-[13px] tracking-wide font-light">
+                      <Icon className="w-4 h-4 text-white/56 group-hover:text-white/78 transition-colors" />
+                      <span className="text-[16px] tracking-wide font-medium">
                         {option.label}
                       </span>
                     </a>
@@ -92,8 +92,8 @@ export function AboutCTA() {
                       to="/projects"
                       className="group px-6 py-4 border border-white/20 text-white hover:border-white/40 hover:bg-white/5 transition-all duration-300 flex items-center justify-center gap-3"
                     >
-                      <Icon className="w-4 h-4 text-white/40 group-hover:text-white/70 transition-colors" />
-                      <span className="text-[13px] tracking-wide font-light">
+                      <Icon className="w-4 h-4 text-white/56 group-hover:text-white/78 transition-colors" />
+                      <span className="text-[16px] tracking-wide font-medium">
                         {option.label}
                       </span>
                     </Link>
@@ -115,7 +115,7 @@ export function AboutCTA() {
             >
               <Link
                 to="/contact"
-                className="group px-10 py-5 bg-white text-black text-[13px] tracking-wide font-light hover:bg-white/90 transition-all duration-300 inline-flex items-center gap-3"
+                className="group px-10 py-5 bg-white text-black text-[16px] tracking-wide font-medium hover:bg-white/90 transition-all duration-300 inline-flex items-center gap-3"
               >
                 Contact Smart Lit
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />

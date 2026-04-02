@@ -48,17 +48,17 @@ export function ResidentialProjects() {
           className="mb-16"
         >
           <div className="mb-6">
-            <span className="text-[11px] tracking-[0.2em] uppercase text-white/40 font-light">
+            <span className="text-[12px] tracking-[0.2em] uppercase text-white/56 font-normal">
               Residential
             </span>
           </div>
-          <h2 className="text-[42px] lg:text-[56px] font-extralight leading-[1.15] tracking-tight text-white mb-6">
+          <h2 className="text-[42px] lg:text-[56px] font-medium leading-[1.15] tracking-tight text-white mb-6">
             Residential project profiles
           </h2>
-          <p className="text-[15px] lg:text-[16px] font-light text-white/50 mb-8 max-w-xl">
+          <p className="text-[17px] lg:text-[18px] font-normal text-white/68 mb-8 max-w-xl">
             Smart Villas • Cinema Rooms • Integrated Living
           </p>
-          <div className="max-w-2xl space-y-6 text-white/65 text-[15px] lg:text-[16px] font-light leading-[1.8]">
+          <div className="max-w-2xl space-y-6 text-white/78 text-[17px] lg:text-[18px] font-normal leading-[1.8]">
             <p>
               These profiles reflect the kinds of luxury homes Smart Lit is
               built to support: architecturally clean, highly usable, and ready
@@ -93,14 +93,14 @@ export function ResidentialProjects() {
 
               {/* Content */}
               <div className="absolute inset-0 flex flex-col justify-end p-8">
-                <h3 className="text-[24px] lg:text-[28px] font-extralight leading-[1.2] tracking-tight text-white mb-2">
+                <h3 className="text-[24px] lg:text-[28px] font-medium leading-[1.2] tracking-tight text-white mb-2">
                   {project.title}
                 </h3>
-                <p className="text-[13px] font-light text-white/60 mb-4">
+                <p className="text-[16px] font-normal text-white/72 mb-4">
                   {project.location}
                 </p>
                 <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <span className="text-[12px] tracking-wide font-light text-white/80 border-b border-white/20 pb-1">
+                  <span className="text-[12px] tracking-wide font-normal text-white/80 border-b border-white/20 pb-1">
                     Project profile
                   </span>
                 </div>

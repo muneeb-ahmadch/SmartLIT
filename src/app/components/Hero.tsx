@@ -35,20 +35,20 @@ export function Hero() {
           className="max-w-5xl"
         >
           <div className="mb-8">
-            <span className="text-[11px] font-light uppercase tracking-[0.22em] text-white/45">
+            <span className="text-[12px] font-medium uppercase tracking-[0.22em] text-white/60">
               Luxury Home Automation Abu Dhabi
             </span>
           </div>
 
           {/* Headline */}
-          <h1 className="mb-10 max-w-4xl text-[44px] leading-[1.05] tracking-tight text-white sm:text-[56px] lg:text-[72px] font-extralight">
+          <h1 className="mb-10 max-w-4xl text-[44px] leading-[1.08] tracking-tight text-white sm:text-[56px] lg:text-[72px] font-medium">
             Design-led smart living,
             <br />
             quietly integrated.
           </h1>
 
           {/* Body Copy */}
-          <div className="mb-12 max-w-3xl space-y-6 text-[15px] font-light leading-[1.8] text-white/74 lg:text-[16px]">
+          <div className="mb-12 max-w-3xl space-y-6 text-[17px] font-normal leading-[1.8] text-white/74 lg:text-[18px]">
             <p>
               Smart Lit designs luxury smart home systems for villas in Abu
               Dhabi and across the UAE, bringing lighting, climate, shading,
@@ -72,7 +72,7 @@ export function Hero() {
             >
               <Link
                 to="/contact"
-                className="group inline-flex items-center justify-center gap-2 bg-white px-8 py-4 text-[13px] font-light tracking-[0.08em] text-black transition-all duration-300 hover:bg-white/90"
+                className="group inline-flex items-center justify-center gap-2 bg-white px-8 py-4 text-[16px] font-medium tracking-[0.08em] text-black transition-all duration-300 hover:bg-white/90"
               >
                 Book a private consultation
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -85,7 +85,7 @@ export function Hero() {
             >
               <Link
                 to="/solutions"
-                className="group inline-flex items-center justify-center gap-2 border border-white/15 bg-white/[0.02] px-8 py-4 text-[13px] font-light tracking-[0.08em] text-white transition-all duration-300 hover:border-white/35 hover:bg-white/5"
+                className="group inline-flex items-center justify-center gap-2 border border-white/15 bg-white/[0.02] px-8 py-4 text-[16px] font-medium tracking-[0.08em] text-white transition-all duration-300 hover:border-white/35 hover:bg-white/5"
               >
                 Explore smart home solutions
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />

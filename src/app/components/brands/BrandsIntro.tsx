@@ -38,10 +38,10 @@ export function BrandsIntro() {
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            <span className="text-[11px] font-light uppercase tracking-[0.2em] text-white/38">
+            <span className="text-[12px] font-medium uppercase tracking-[0.2em] text-white/38">
               Brand Edit
             </span>
-            <h2 className="mt-5 text-[34px] font-extralight leading-[1.12] tracking-tight text-white sm:text-[42px] lg:text-[54px]">
+            <h2 className="mt-5 text-[34px] font-medium leading-[1.12] tracking-tight text-white sm:text-[42px] lg:text-[54px]">
               Fewer brands. Better decisions.
             </h2>
           </motion.div>
@@ -50,7 +50,7 @@ export function BrandsIntro() {
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.1, ease: "easeOut" }}
-            className="max-w-3xl text-[15px] font-light leading-[1.8] text-white/64 lg:justify-self-end lg:text-[16px]"
+            className="max-w-3xl text-[17px] font-normal leading-[1.8] text-white/76 lg:justify-self-end lg:text-[18px]"
           >
             The lineup is intentionally narrow: control, signal flow, audio,
             projection, and tactile interfaces selected to operate as one
@@ -71,7 +71,7 @@ export function BrandsIntro() {
               }}
               className="rounded-[26px] border border-white/10 bg-white/[0.025] p-6 sm:p-7"
             >
-              <p className="text-[11px] uppercase tracking-[0.18em] text-white/35">
+              <p className="text-[12px] uppercase tracking-[0.18em] text-white/52">
                 {group.title}
               </p>
               <div className="mt-8 space-y-3">
@@ -80,7 +80,7 @@ export function BrandsIntro() {
                     key={brand}
                     className="border-b border-white/8 pb-3 last:border-b-0 last:pb-0"
                   >
-                    <p className="text-[22px] font-extralight leading-[1.2] text-white">
+                    <p className="text-[22px] font-medium leading-[1.2] text-white">
                       {brand}
                     </p>
                   </div>

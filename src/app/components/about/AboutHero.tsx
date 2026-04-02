@@ -26,20 +26,20 @@ export function AboutHero() {
         >
           {/* Eyebrow */}
           <div className="mb-8">
-            <span className="text-[11px] tracking-[0.2em] uppercase text-white/40 font-light">
+            <span className="text-[12px] tracking-[0.2em] uppercase text-white/56 font-normal">
               About Smart Lit
             </span>
           </div>
 
           {/* Headline */}
-          <h1 className="text-[56px] lg:text-[68px] font-extralight leading-[1.1] tracking-tight text-white mb-12">
+          <h1 className="text-[56px] lg:text-[68px] font-medium leading-[1.12] tracking-tight text-white mb-12">
             Luxury automation,
             <br />
             designed with restraint.
           </h1>
 
           {/* Body Copy */}
-          <div className="space-y-6 text-white/70 text-[15px] lg:text-[16px] font-light leading-[1.8] max-w-2xl mb-12">
+          <div className="space-y-6 text-white/78 text-[17px] lg:text-[18px] font-normal leading-[1.8] max-w-2xl mb-12">
             <p className="text-white/85">
               Smart Lit was built for clients who want advanced technology to
               feel composed, useful, and visually disciplined.
@@ -61,7 +61,7 @@ export function AboutHero() {
           >
             <Link
               to="/solutions"
-              className="group px-8 py-4 border border-white/20 text-white text-[13px] tracking-wide font-light hover:border-white/40 hover:bg-white/5 transition-all duration-300 flex items-center gap-2"
+              className="group px-8 py-4 border border-white/20 text-white text-[16px] tracking-wide font-medium hover:border-white/40 hover:bg-white/5 transition-all duration-300 flex items-center gap-2"
             >
               Explore our solutions
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />

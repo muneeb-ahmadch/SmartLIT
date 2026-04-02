@@ -21,15 +21,15 @@ function ValueCard({ title, description, index }: ValueProps) {
       className="group"
     >
       <div className="mb-4">
-        <span className="text-[10px] tracking-[0.2em] uppercase text-white/30 font-light">
+        <span className="text-[12px] tracking-[0.2em] uppercase text-white/30 font-normal">
           {String(index + 1).padStart(2, "0")}
         </span>
       </div>
-      <h3 className="text-[22px] font-light tracking-tight text-white mb-4 group-hover:text-white/90 transition-colors duration-300">
+      <h3 className="text-[22px] font-normal tracking-tight text-white mb-4 group-hover:text-white/90 transition-colors duration-300">
         {title}
       </h3>
       <div className="w-12 h-[1px] bg-white/20 mb-6 group-hover:w-16 group-hover:bg-white/40 transition-all duration-500" />
-      <p className="text-[14px] font-light leading-[1.8] text-white/60 group-hover:text-white/70 transition-colors duration-300">
+      <p className="text-[16px] font-normal leading-[1.8] text-white/72 group-hover:text-white/78 transition-colors duration-300">
         {description}
       </p>
     </motion.div>
@@ -84,11 +84,11 @@ export function BrandValues() {
           className="mb-20 max-w-2xl"
         >
           <div className="mb-6">
-            <span className="text-[11px] tracking-[0.2em] uppercase text-white/40 font-light">
+            <span className="text-[12px] tracking-[0.2em] uppercase text-white/56 font-normal">
               Our Values
             </span>
           </div>
-          <h2 className="text-[42px] lg:text-[56px] font-extralight leading-[1.15] tracking-tight text-white">
+          <h2 className="text-[42px] lg:text-[56px] font-medium leading-[1.15] tracking-tight text-white">
             What defines Smart Lit
           </h2>
         </motion.div>

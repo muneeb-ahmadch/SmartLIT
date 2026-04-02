@@ -57,12 +57,12 @@ export function Header() {
           <div className="min-w-0 flex items-baseline gap-2 sm:gap-3">
             <Link
               to="/"
-              className="shrink-0 text-[22px] font-light tracking-[0.18em] text-white transition-colors hover:text-white/90 sm:text-[28px]"
+              className="shrink-0 text-[22px] font-normal tracking-[0.18em] text-white transition-colors hover:text-white/90 sm:text-[28px]"
               aria-label="Smart Lit home"
             >
               Smart Lit
             </Link>
-            <span className="hidden text-[10px] font-light uppercase tracking-[0.18em] text-white/40 sm:inline md:text-[11px]">
+            <span className="hidden text-[12px] font-medium uppercase tracking-[0.18em] text-white/56 sm:inline md:text-[12px]">
               UAE
             </span>
           </div>
@@ -89,8 +89,8 @@ export function Header() {
                 <Link
                   key={item.to}
                   to={item.to}
-                  className={`whitespace-nowrap text-[13px] font-light tracking-wide transition-colors duration-300 ${
-                    isActive ? "text-white" : "text-white/60 hover:text-white"
+                  className={`whitespace-nowrap text-[16px] font-medium tracking-wide transition-colors duration-300 ${
+                    isActive ? "text-white" : "text-white/72 hover:text-white"
                   }`}
                 >
                   {item.label}
@@ -117,8 +117,8 @@ export function Header() {
                 <Link
                   key={item.to}
                   to={item.to}
-                  className={`border-b border-white/10 py-4 text-[15px] font-light tracking-[0.12em] transition-colors duration-300 last:border-b-0 ${
-                    isActive ? "text-white" : "text-white/70 hover:text-white"
+                  className={`border-b border-white/10 py-4 text-[17px] font-normal tracking-[0.12em] transition-colors duration-300 last:border-b-0 ${
+                    isActive ? "text-white" : "text-white/78 hover:text-white"
                   }`}
                 >
                   {item.label}

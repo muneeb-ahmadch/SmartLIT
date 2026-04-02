@@ -24,14 +24,14 @@ export function HomeAutomation() {
             className="max-w-xl"
           >
             <div className="mb-6">
-              <span className="text-[11px] tracking-[0.2em] uppercase text-white/40 font-light">
+              <span className="text-[12px] tracking-[0.2em] uppercase text-white/56 font-normal">
                 Solution 01
               </span>
             </div>
-            <h2 className="text-[42px] lg:text-[56px] font-extralight leading-[1.15] tracking-tight text-white mb-10">
+            <h2 className="text-[42px] lg:text-[56px] font-medium leading-[1.15] tracking-tight text-white mb-10">
               Home Automation
             </h2>
-            <div className="space-y-6 text-white/65 text-[15px] lg:text-[16px] font-light leading-[1.8] mb-10">
+            <div className="space-y-6 text-white/78 text-[17px] lg:text-[18px] font-normal leading-[1.8] mb-10">
               <p>
                 Our luxury home automation systems unify the core experiences of
                 the villa so the home responds clearly and consistently.
@@ -55,14 +55,14 @@ export function HomeAutomation() {
                   className="flex items-center gap-3"
                 >
                   <div className="w-1 h-1 bg-white/40 rounded-full" />
-                  <p className="text-[15px] font-light text-white/80">
+                  <p className="text-[17px] font-normal text-white/80">
                     {feature}
                   </p>
                 </motion.div>
               ))}
             </div>
 
-            <div className="space-y-6 text-white/65 text-[15px] lg:text-[16px] font-light leading-[1.8]">
+            <div className="space-y-6 text-white/78 text-[17px] lg:text-[18px] font-normal leading-[1.8]">
               <p>
                 Smart Lit designs these systems for villas that need daily ease,
                 strong technical structure, and clean integration with the

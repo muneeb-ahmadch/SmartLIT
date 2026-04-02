@@ -20,14 +20,14 @@ export function SolutionsCTA() {
             className="mb-12"
           >
             <div className="mb-6">
-              <span className="text-[11px] tracking-[0.2em] uppercase text-white/40 font-light">
+              <span className="text-[12px] tracking-[0.2em] uppercase text-white/56 font-normal">
                 Consultation
               </span>
             </div>
-            <h2 className="text-[42px] lg:text-[56px] font-extralight leading-[1.15] tracking-tight text-white mb-8">
+            <h2 className="text-[42px] lg:text-[56px] font-medium leading-[1.15] tracking-tight text-white mb-8">
               Let&apos;s define the right system for the project.
             </h2>
-            <p className="text-[15px] lg:text-[16px] font-light leading-[1.8] text-white/65 max-w-2xl mx-auto">
+            <p className="text-[17px] lg:text-[18px] font-normal leading-[1.8] text-white/78 max-w-2xl mx-auto">
               If you are comparing smart home companies in Abu Dhabi or shaping
               a luxury villa brief, we can map the control, lighting, media, and
               security layers around the way the home should live.
@@ -47,7 +47,7 @@ export function SolutionsCTA() {
             >
               <Link
                 to="/contact"
-                className="group px-10 py-5 bg-white text-black text-[13px] tracking-wide font-light hover:bg-white/90 transition-all duration-300 inline-flex items-center justify-center gap-3"
+                className="group px-10 py-5 bg-white text-black text-[16px] tracking-wide font-medium hover:bg-white/90 transition-all duration-300 inline-flex items-center justify-center gap-3"
               >
                 Schedule a consultation
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -59,7 +59,7 @@ export function SolutionsCTA() {
             >
               <Link
                 to="/projects"
-                className="group px-10 py-5 border border-white/20 text-white text-[13px] tracking-wide font-light hover:border-white/40 hover:bg-white/5 transition-all duration-300 inline-flex items-center justify-center gap-3"
+                className="group px-10 py-5 border border-white/20 text-white text-[16px] tracking-wide font-medium hover:border-white/40 hover:bg-white/5 transition-all duration-300 inline-flex items-center justify-center gap-3"
               >
                 Review project profiles
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -74,7 +74,7 @@ export function SolutionsCTA() {
             transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
             className="mt-12"
           >
-            <p className="text-[13px] font-light italic text-white/40">
+            <p className="text-[16px] font-normal italic text-white/56">
               All consultations are private and complimentary.
             </p>
           </motion.div>

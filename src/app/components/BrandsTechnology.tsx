@@ -21,11 +21,11 @@ function BrandCard({ name, description, index }: BrandCardProps) {
       className="group border border-white/10 p-8 hover:border-white/20 hover:bg-white/[0.02] transition-all duration-500"
     >
       <div className="mb-4">
-        <h3 className="text-[20px] font-light tracking-wide text-white">
+        <h3 className="text-[20px] font-normal tracking-wide text-white">
           {name}
         </h3>
       </div>
-      <p className="text-[13px] font-light leading-[1.7] text-white/50 group-hover:text-white/70 transition-colors duration-500">
+      <p className="text-[16px] font-normal leading-[1.7] text-white/68 group-hover:text-white/78 transition-colors duration-500">
         {description}
       </p>
     </motion.div>
@@ -95,16 +95,16 @@ export function BrandsTechnology() {
           className="mb-20 max-w-3xl"
         >
           <div className="mb-6">
-            <span className="text-[11px] tracking-[0.2em] uppercase text-white/40 font-light">
+            <span className="text-[12px] tracking-[0.2em] uppercase text-white/56 font-normal">
               Partners in Excellence
             </span>
           </div>
-          <h2 className="text-[42px] lg:text-[56px] font-extralight leading-[1.15] tracking-tight text-white mb-8">
+          <h2 className="text-[42px] lg:text-[56px] font-medium leading-[1.15] tracking-tight text-white mb-8">
             The Art of Engineering
             <br />
             Excellence
           </h2>
-          <p className="text-[15px] lg:text-[16px] font-light leading-[1.8] text-white/65">
+          <p className="text-[17px] lg:text-[18px] font-normal leading-[1.8] text-white/78">
             At Smart LIT, we partner only with brands whose engineering integrity
             matches the architectural elegance of the villas and yachts we serve
             across the UAE.
@@ -125,7 +125,7 @@ export function BrandsTechnology() {
           transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
           className="mt-20 text-center"
         >
-          <p className="text-[14px] font-light italic text-white/50 max-w-2xl mx-auto">
+          <p className="text-[16px] font-normal italic text-white/68 max-w-2xl mx-auto">
             Each brand is selected not for marketing appeal, but for proven
             reliability, sonic or visual excellence, and architectural
             compatibility.

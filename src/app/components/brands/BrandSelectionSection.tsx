@@ -39,10 +39,10 @@ export function BrandSelectionSection() {
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            <span className="text-[11px] font-light uppercase tracking-[0.22em] text-white/35">
+            <span className="text-[12px] font-medium uppercase tracking-[0.22em] text-white/52">
               Selection Standard
             </span>
-            <h2 className="mt-5 text-[36px] font-extralight leading-[1.1] tracking-tight text-white sm:text-[44px] lg:text-[58px]">
+            <h2 className="mt-5 text-[36px] font-medium leading-[1.12] tracking-tight text-white sm:text-[44px] lg:text-[58px]">
               Every product must justify its place in the home.
             </h2>
           </motion.div>
@@ -51,7 +51,7 @@ export function BrandSelectionSection() {
             initial={{ opacity: 0, y: 34 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.1, ease: "easeOut" }}
-            className="max-w-3xl text-[15px] font-light leading-[1.8] text-white/64 lg:justify-self-end lg:text-[16px]"
+            className="max-w-3xl text-[17px] font-normal leading-[1.8] text-white/76 lg:justify-self-end lg:text-[18px]"
           >
             A premium system is not built by collecting logos. It is built by
             specifying the right products, in the right hierarchy, for the right
@@ -73,10 +73,10 @@ export function BrandSelectionSection() {
               className="rounded-[28px] border border-white/10 bg-white/[0.025] p-6 sm:p-7"
             >
               <div className="mb-8 h-px w-14 bg-white/18" />
-              <h3 className="text-[26px] font-extralight leading-[1.15] tracking-tight text-white">
+              <h3 className="text-[26px] font-medium leading-[1.15] tracking-tight text-white">
                 {point.title}
               </h3>
-              <p className="mt-5 text-[14px] font-light leading-[1.75] text-white/64 sm:text-[15px]">
+              <p className="mt-5 text-[16px] font-normal leading-[1.75] text-white/76 sm:text-[17px]">
                 {point.detail}
               </p>
             </motion.article>
@@ -86,13 +86,13 @@ export function BrandSelectionSection() {
         <div className="mt-12 flex flex-col items-center justify-center gap-4 text-center sm:flex-row">
           <Link
             to="/solutions"
-            className="border border-white/15 px-6 py-3 text-[13px] tracking-[0.12em] text-white/85 transition-all duration-300 hover:border-white/35 hover:bg-white/5"
+            className="border border-white/15 px-6 py-3 text-[16px] tracking-[0.12em] text-white/85 transition-all duration-300 hover:border-white/35 hover:bg-white/5"
           >
             Explore Smart Home Solutions
           </Link>
           <Link
             to="/contact"
-            className="border border-white/15 px-6 py-3 text-[13px] tracking-[0.12em] text-white/85 transition-all duration-300 hover:border-white/35 hover:bg-white/5"
+            className="border border-white/15 px-6 py-3 text-[16px] tracking-[0.12em] text-white/85 transition-all duration-300 hover:border-white/35 hover:bg-white/5"
           >
             Contact Smart Lit
           </Link>

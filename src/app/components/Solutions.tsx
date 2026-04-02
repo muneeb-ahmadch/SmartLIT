@@ -35,18 +35,18 @@ function SolutionCard({ title, description, image, index }: SolutionProps) {
       {/* Content */}
       <div className="relative z-10 h-full flex flex-col justify-end p-8 lg:p-10">
         <div className="mb-4">
-          <span className="text-[10px] tracking-[0.2em] uppercase text-white/50 font-light">
+          <span className="text-[12px] tracking-[0.2em] uppercase text-white/68 font-normal">
             {String(index + 1).padStart(2, "0")}
           </span>
         </div>
-        <h3 className="text-[28px] lg:text-[32px] font-light tracking-tight text-white mb-4">
+        <h3 className="text-[28px] lg:text-[32px] font-normal tracking-tight text-white mb-4">
           {title}
         </h3>
-        <p className="text-[14px] font-light leading-[1.7] text-white/70 mb-6 max-w-md">
+        <p className="text-[16px] font-normal leading-[1.7] text-white/78 mb-6 max-w-md">
           {description}
         </p>
-        <div className="flex items-center gap-2 text-white/60 group-hover:text-white transition-colors duration-300">
-          <span className="text-[12px] tracking-wide font-light">Discover more</span>
+        <div className="flex items-center gap-2 text-white/72 group-hover:text-white transition-colors duration-300">
+          <span className="text-[12px] tracking-wide font-normal">Discover more</span>
           <ArrowRight className="w-4 h-4 group-hover:translate-x-2 transition-transform duration-300" />
         </div>
       </div>
@@ -121,11 +121,11 @@ export function Solutions() {
           className="mb-20"
         >
           <div className="mb-6">
-            <span className="text-[11px] tracking-[0.2em] uppercase text-white/40 font-light">
+            <span className="text-[12px] tracking-[0.2em] uppercase text-white/56 font-normal">
               Our Solutions
             </span>
           </div>
-          <h2 className="text-[42px] lg:text-[56px] font-extralight leading-[1.1] tracking-tight text-white max-w-3xl">
+          <h2 className="text-[42px] lg:text-[56px] font-medium leading-[1.12] tracking-tight text-white max-w-3xl">
             Intelligent Systems for
             <br />
             Luxury Living

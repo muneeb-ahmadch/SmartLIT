@@ -51,8 +51,8 @@ function LeadershipStory({
           <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent opacity-60" />
         </div>
         <div className="mt-6">
-          <p className="text-[14px] font-light text-white/50">{name}</p>
-          <p className="mt-1 text-[12px] font-light text-white/40">{role}</p>
+          <p className="text-[16px] font-normal text-white/68">{name}</p>
+          <p className="mt-1 text-[12px] font-normal text-white/56">{role}</p>
         </div>
       </motion.div>
 
@@ -64,14 +64,14 @@ function LeadershipStory({
         className={`lg:col-span-7 ${contentOrder}`}
       >
         <div className="mb-6">
-          <span className="text-[11px] tracking-[0.2em] uppercase text-white/40 font-light">
+          <span className="text-[12px] tracking-[0.2em] uppercase text-white/56 font-normal">
             {eyebrow}
           </span>
         </div>
-        <h3 className="mb-10 text-[36px] font-extralight leading-[1.15] tracking-tight text-white lg:text-[48px]">
+        <h3 className="mb-10 text-[36px] font-medium leading-[1.15] tracking-tight text-white lg:text-[48px]">
           {title}
         </h3>
-        <div className="space-y-6 text-[15px] font-light leading-[1.8] text-white/65 lg:text-[16px]">
+        <div className="space-y-6 text-[17px] font-normal leading-[1.8] text-white/78 lg:text-[18px]">
           {paragraphs.map((paragraph, index) => (
             <p
               key={`${name}-${index}`}
@@ -91,10 +91,10 @@ function LeadershipStory({
             className="mt-16 border-l-2 border-white/20 py-6 pl-8"
           >
             <Quote className="mb-4 h-8 w-8 text-white/20" />
-            <p className="text-[20px] font-light italic leading-[1.5] text-white/90 lg:text-[24px]">
+            <p className="text-[20px] font-normal italic leading-[1.5] text-white/90 lg:text-[24px]">
               "{quote}"
             </p>
-            <p className="mt-4 text-[13px] font-light text-white/40">
+            <p className="mt-4 text-[16px] font-normal text-white/56">
               — {name}
             </p>
           </motion.div>
@@ -119,11 +119,11 @@ export function FounderStory() {
           className="mb-20"
         >
           <div className="mb-6">
-            <span className="text-[11px] tracking-[0.2em] uppercase text-white/40 font-light">
+            <span className="text-[12px] tracking-[0.2em] uppercase text-white/56 font-normal">
               Leadership
             </span>
           </div>
-          <h2 className="text-[42px] lg:text-[56px] font-extralight leading-[1.15] tracking-tight text-white">
+          <h2 className="text-[42px] lg:text-[56px] font-medium leading-[1.15] tracking-tight text-white">
             A founder-led standard of detail.
           </h2>
         </motion.div>

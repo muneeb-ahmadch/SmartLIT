@@ -30,14 +30,14 @@ export function ConsultationCTA() {
             className="mb-16"
           >
             <div className="mb-6">
-              <span className="text-[11px] font-light uppercase tracking-[0.2em] text-white/40">
+              <span className="text-[12px] font-medium uppercase tracking-[0.2em] text-white/56">
                 Smart Lit Consultation
               </span>
             </div>
-            <h2 className="mb-8 text-[38px] font-extralight leading-[1.12] tracking-tight text-white sm:text-[44px] lg:text-[56px]">
+            <h2 className="mb-8 text-[38px] font-medium leading-[1.12] tracking-tight text-white sm:text-[44px] lg:text-[56px]">
               Start with a brief, private conversation.
             </h2>
-            <p className="mx-auto max-w-2xl text-[15px] font-light leading-[1.8] text-white/65 lg:text-[16px]">
+            <p className="mx-auto max-w-2xl text-[17px] font-normal leading-[1.8] text-white/78 lg:text-[18px]">
               Whether you are planning a new villa, refining a renovation, or
               coordinating with your architect, we can define the right level of
               technology before complexity sets in.
@@ -55,7 +55,7 @@ export function ConsultationCTA() {
               whileHover={{ x: 4 }}
               transition={{ duration: 0.3 }}
               href={`mailto:${SITE_EMAIL}?subject=Private%20Consultation`}
-              className="group inline-flex min-w-[220px] items-center justify-center gap-3 bg-white px-8 py-4 text-[13px] font-light tracking-[0.08em] text-black transition-all duration-300 hover:bg-white/90"
+              className="group inline-flex min-w-[220px] items-center justify-center gap-3 bg-white px-8 py-4 text-[16px] font-medium tracking-[0.08em] text-black transition-all duration-300 hover:bg-white/90"
             >
               Email your brief
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -66,7 +66,7 @@ export function ConsultationCTA() {
             >
               <Link
                 to="/contact"
-                className="group inline-flex min-w-[220px] items-center justify-center gap-3 border border-white/15 bg-white/[0.03] px-8 py-4 text-[13px] font-light tracking-[0.08em] text-white transition-all duration-300 hover:border-white/35 hover:bg-white/5"
+                className="group inline-flex min-w-[220px] items-center justify-center gap-3 border border-white/15 bg-white/[0.03] px-8 py-4 text-[16px] font-medium tracking-[0.08em] text-white transition-all duration-300 hover:border-white/35 hover:bg-white/5"
               >
                 Contact Smart Lit
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -78,7 +78,7 @@ export function ConsultationCTA() {
             >
               <Link
                 to="/brands-technology"
-                className="group inline-flex min-w-[220px] items-center justify-center gap-3 border border-white/15 bg-transparent px-8 py-4 text-[13px] font-light tracking-[0.08em] text-white/88 transition-all duration-300 hover:border-white/35 hover:bg-white/5 hover:text-white"
+                className="group inline-flex min-w-[220px] items-center justify-center gap-3 border border-white/15 bg-transparent px-8 py-4 text-[16px] font-medium tracking-[0.08em] text-white/88 transition-all duration-300 hover:border-white/35 hover:bg-white/5 hover:text-white"
               >
                 Explore brands & tech
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -93,7 +93,7 @@ export function ConsultationCTA() {
             transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
             className="mt-10"
           >
-            <p className="text-[13px] font-light italic text-white/40">
+            <p className="text-[16px] font-normal italic text-white/56">
               Design-sensitive integration for Abu Dhabi and the UAE.
             </p>
           </motion.div>

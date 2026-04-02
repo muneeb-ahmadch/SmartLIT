@@ -28,18 +28,18 @@ export function LifestyleStory() {
             className="max-w-2xl"
           >
             <div className="mb-8">
-              <span className="text-[11px] tracking-[0.2em] uppercase text-white/40 font-light">
+              <span className="text-[12px] tracking-[0.2em] uppercase text-white/56 font-normal">
                 Our Philosophy
               </span>
             </div>
 
-            <h2 className="text-[42px] lg:text-[56px] font-extralight leading-[1.15] tracking-tight text-white mb-12">
+            <h2 className="text-[42px] lg:text-[56px] font-medium leading-[1.15] tracking-tight text-white mb-12">
               Designed Around Architecture.
               <br />
               Engineered Around Life.
             </h2>
 
-            <div className="space-y-8 text-white/70 text-[15px] lg:text-[16px] font-light leading-[1.8]">
+            <div className="space-y-8 text-white/78 text-[17px] lg:text-[18px] font-normal leading-[1.8]">
               <p>
                 No two villas are identical. No two yachts share the same
                 personality.

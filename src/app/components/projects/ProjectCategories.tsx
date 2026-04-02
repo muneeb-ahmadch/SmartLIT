@@ -42,14 +42,14 @@ export function ProjectCategories() {
           className="text-center mb-20"
         >
           <div className="mb-6">
-            <span className="text-[11px] tracking-[0.2em] uppercase text-white/40 font-light">
+            <span className="text-[12px] tracking-[0.2em] uppercase text-white/56 font-normal">
               Project Focus
             </span>
           </div>
-          <h2 className="text-[42px] lg:text-[56px] font-extralight leading-[1.15] tracking-tight text-white mb-8">
+          <h2 className="text-[42px] lg:text-[56px] font-medium leading-[1.15] tracking-tight text-white mb-8">
             Residential systems with tailored entertainment spaces.
           </h2>
-          <div className="max-w-2xl mx-auto space-y-6 text-white/65 text-[15px] lg:text-[16px] font-light leading-[1.8]">
+          <div className="max-w-2xl mx-auto space-y-6 text-white/78 text-[17px] lg:text-[18px] font-normal leading-[1.8]">
             <p>
               Our strongest relevance is luxury residential automation, with
               dedicated cinema and media environments sitting inside the wider
@@ -86,11 +86,11 @@ export function ProjectCategories() {
 
                 {/* Content */}
                 <div className="absolute inset-0 flex flex-col justify-end p-8 lg:p-12">
-                  <h3 className="text-[32px] lg:text-[42px] font-extralight leading-[1.2] tracking-tight text-white mb-4">
+                  <h3 className="text-[32px] lg:text-[42px] font-medium leading-[1.2] tracking-tight text-white mb-4">
                     {category.title}
                   </h3>
-                  <div className="flex items-center gap-2 text-white/60 group-hover:text-white transition-colors duration-300">
-                    <span className="text-[13px] tracking-wide font-light">
+                  <div className="flex items-center gap-2 text-white/72 group-hover:text-white transition-colors duration-300">
+                    <span className="text-[16px] tracking-wide font-medium">
                       Explore Projects
                     </span>
                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
