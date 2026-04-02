@@ -1,6 +1,6 @@
 export const SITE_NAME = "Smart Lit";
 export const SITE_URL = "https://smartlit.ae";
-export const SITE_EMAIL = "contact@smartlit.ae";
+export const SITE_EMAIL = "sales@smartlit.me";
 export const DEFAULT_OG_IMAGE =
   "https://images.unsplash.com/photo-1664607069803-96e9d885050e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1600";
 
