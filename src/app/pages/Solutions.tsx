@@ -7,6 +7,8 @@ import { HomeCinema } from "../components/solutions/HomeCinema";
 import { MultiroomAudio } from "../components/solutions/MultiroomAudio";
 import { VideoDistribution } from "../components/solutions/VideoDistribution";
 import { LightingControl } from "../components/solutions/LightingControl";
+import { CurtainsControl } from "../components/solutions/CurtainsControl";
+import { HvacControl } from "../components/solutions/HvacControl";
 import { SecurityIntegration } from "../components/solutions/SecurityIntegration";
 import { YachtAutomation } from "../components/solutions/YachtAutomation";
 import { SolutionsCTA } from "../components/solutions/SolutionsCTA";
@@ -54,6 +56,8 @@ export function Solutions() {
         <MultiroomAudio />
         <VideoDistribution />
         <LightingControl />
+        <CurtainsControl />
+        <HvacControl />
         <SecurityIntegration />
         <YachtAutomation />
         <SolutionsCTA />

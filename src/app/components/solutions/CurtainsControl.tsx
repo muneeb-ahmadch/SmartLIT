@@ -2,50 +2,64 @@ import { motion } from "motion/react";
 import { useInView } from "motion/react";
 import { useRef } from "react";
 
-export function YachtAutomation() {
+export function CurtainsControl() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
-  const systems = [
-    "Lighting systems",
-    "Climate control",
-    "Entertainment systems",
-    "Audio distribution",
-    "Surveillance and security",
+  const features = [
+    "Morning daylight scenes",
+    "Daytime glare control",
+    "Evening privacy settings",
+    "Lighting-integrated schedules",
   ];
 
   return (
-    <section ref={ref} className="relative bg-[#0a0a0a] overflow-hidden">
+    <section ref={ref} className="relative bg-black overflow-hidden">
       <div className="max-w-[1440px] mx-auto px-8 lg:px-16 py-24 lg:py-32">
         <div className="grid items-center gap-14 lg:min-h-screen lg:grid-cols-2 lg:gap-24">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.96 }}
+            animate={isInView ? { opacity: 1, scale: 1 } : {}}
+            transition={{ duration: 0.8, delay: 0.1, ease: "easeOut" }}
+            className="order-2 relative h-[420px] overflow-hidden rounded-[28px] lg:order-1 lg:h-[640px]"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+              alt="Luxury interior with sheer curtains and soft daylight"
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+          </motion.div>
+
           <motion.div
             initial={{ opacity: 0, y: 40 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="max-w-xl"
+            className="order-1 max-w-xl lg:order-2 lg:justify-self-end"
           >
             <div className="mb-6">
               <span className="text-[12px] tracking-[0.2em] uppercase text-white/56 font-normal">
-                Solution 09
+                Solution 06
               </span>
             </div>
             <h2 className="text-[42px] lg:text-[56px] font-medium leading-[1.15] tracking-tight text-white mb-10">
-              Yacht Automation
+              Curtains Control
             </h2>
             <div className="space-y-6 text-white/78 text-[17px] lg:text-[18px] font-normal leading-[1.8] mb-10">
               <p className="text-white/85">
-                Technology at sea requires a different engineering discipline.
+                Natural light and privacy should shift with the rhythm of the day.
               </p>
               <p>
-                Where marine projects apply, Smart Lit designs control systems
-                that manage key onboard experiences with resilience and clarity:
+                Our curtain control systems manage daylight, glare, and privacy
+                with quiet precision, keeping interiors balanced from morning to
+                evening.
               </p>
             </div>
 
             <div className="space-y-4 mb-10">
-              {systems.map((system, index) => (
+              {features.map((feature, index) => (
                 <motion.div
-                  key={system}
+                  key={feature}
                   initial={{ opacity: 0, x: -20 }}
                   animate={isInView ? { opacity: 1, x: 0 } : {}}
                   transition={{
@@ -57,33 +71,17 @@ export function YachtAutomation() {
                 >
                   <div className="w-1 h-1 bg-white/40 rounded-full" />
                   <p className="text-[17px] font-normal text-white/80">
-                    {system}
+                    {feature}
                   </p>
                 </motion.div>
               ))}
             </div>
 
             <div className="space-y-6 text-white/78 text-[17px] lg:text-[18px] font-normal leading-[1.8]">
-              <p>
-                Compact architecture, marine-grade components, and thoughtful
-                user experience remain essential whenever the brief extends
-                beyond land-based living.
+              <p className="text-white/85">
+                The result is effortless control of light, privacy, and atmosphere.
               </p>
             </div>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, scale: 0.96 }}
-            animate={isInView ? { opacity: 1, scale: 1 } : {}}
-            transition={{ duration: 0.8, delay: 0.1, ease: "easeOut" }}
-            className="relative h-[420px] overflow-hidden rounded-[28px] lg:h-[640px]"
-          >
-          <img
-            src="https://images.unsplash.com/photo-1697124510322-27ef594f67fd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx5YWNodCUyMGludGVyaW9yJTIwbHV4dXJ5JTIwbG91bmdlfGVufDF8fHx8MTc3MzQzNDMwNnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-            alt="Luxury yacht interior"
-            className="w-full h-full object-cover"
-          />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a]/55 via-transparent to-transparent" />
           </motion.div>
         </div>
       </div>

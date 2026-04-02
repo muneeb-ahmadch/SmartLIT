@@ -67,7 +67,7 @@ export function Solutions() {
         "https://images.unsplash.com/photo-1565596259320-f1a4ade7043a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzbWFydCUyMGhvbWUlMjBsaWdodGluZyUyMGNvbnRyb2wlMjBtaW5pbWFsfGVufDF8fHx8MTc3MzEzNjcwMHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
     },
     {
-      title: "Home Cinema Design",
+      title: "Home Cinema",
       description:
         "A private cinema is more than a screen and speakers. It is an immersive architectural experience.",
       image:

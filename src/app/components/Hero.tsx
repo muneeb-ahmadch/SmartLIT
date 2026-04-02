@@ -36,7 +36,7 @@ export function Hero() {
         >
           <div className="mb-8">
             <span className="text-[12px] font-medium uppercase tracking-[0.22em] text-white/60">
-              Luxury Home Automation Abu Dhabi
+              Luxury Home Automation
             </span>
           </div>
 

@@ -40,7 +40,7 @@ export function SecurityIntegration() {
           >
             <div className="mb-6">
               <span className="text-[12px] tracking-[0.2em] uppercase text-white/56 font-normal">
-                Solution 06
+                Solution 08
               </span>
             </div>
             <h2 className="text-[42px] lg:text-[56px] font-medium leading-[1.15] tracking-tight text-white mb-10">
