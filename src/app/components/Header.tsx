@@ -2,6 +2,7 @@ import { motion } from "motion/react";
 import { Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router";
+import smartLitLogo from "../../assets/smart-LIT-Logo.png";
 
 export function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -12,8 +13,8 @@ export function Header() {
     { to: "/", label: "Home" },
     { to: "/about", label: "About" },
     { to: "/solutions", label: "Solutions" },
-    { to: "/projects", label: "Projects" },
     { to: "/brands-technology", label: "Brands & Tech" },
+    { to: "/projects", label: "Projects" },
     { to: "/contact", label: "Contact" },
   ];
 
@@ -54,17 +55,18 @@ export function Header() {
         }`}
       >
         <div className="mx-auto flex max-w-[1440px] items-center justify-between gap-4 px-4 py-4 sm:px-6 md:px-8 lg:px-16 lg:py-6">
-          <div className="min-w-0 flex items-baseline gap-2 sm:gap-3">
+          <div className="min-w-0 flex items-center">
             <Link
               to="/"
-              className="shrink-0 text-[22px] font-normal tracking-[0.18em] text-white transition-colors hover:text-white/90 sm:text-[28px]"
+              className="shrink-0 transition-opacity hover:opacity-90"
               aria-label="Smart Lit home"
             >
-              Smart Lit
+              <img
+                src={smartLitLogo}
+                alt="Smart Lit"
+                className="h-16 w-auto sm:h-20 lg:h-24"
+              />
             </Link>
-            <span className="hidden text-[12px] font-medium uppercase tracking-[0.18em] text-white/56 sm:inline md:text-[12px]">
-              UAE
-            </span>
           </div>
 
           <button

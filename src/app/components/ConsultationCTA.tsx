@@ -5,7 +5,21 @@ import { ArrowRight } from "lucide-react";
 import { Link } from "react-router";
 import { SITE_EMAIL } from "../lib/site";
 
-export function ConsultationCTA() {
+type ConsultationCTAProps = {
+  tertiaryCta?: {
+    label: string;
+    to: string;
+  };
+};
+
+const defaultTertiaryCta = {
+  label: "Explore brands & tech",
+  to: "/brands-technology",
+};
+
+export function ConsultationCTA({
+  tertiaryCta = defaultTertiaryCta,
+}: ConsultationCTAProps) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
@@ -35,7 +49,7 @@ export function ConsultationCTA() {
               </span>
             </div>
             <h2 className="mb-8 text-[38px] font-medium leading-[1.12] tracking-tight text-white sm:text-[44px] lg:text-[56px]">
-              Start with a brief, private conversation.
+              Start with a private conversation.
             </h2>
             <p className="mx-auto max-w-2xl text-[17px] font-normal leading-[1.8] text-white/78 lg:text-[18px]">
               Whether you are planning a new villa, refining a renovation, or
@@ -57,7 +71,7 @@ export function ConsultationCTA() {
               href={`mailto:${SITE_EMAIL}?subject=Private%20Consultation`}
               className="group inline-flex min-w-[220px] items-center justify-center gap-3 bg-white px-8 py-4 text-[16px] font-medium tracking-[0.08em] text-black transition-all duration-300 hover:bg-white/90"
             >
-              Email your brief
+              Email us
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </motion.a>
             <motion.div
@@ -77,10 +91,10 @@ export function ConsultationCTA() {
               transition={{ duration: 0.3 }}
             >
               <Link
-                to="/brands-technology"
+                to={tertiaryCta.to}
                 className="group inline-flex min-w-[220px] items-center justify-center gap-3 border border-white/15 bg-transparent px-8 py-4 text-[16px] font-medium tracking-[0.08em] text-white/88 transition-all duration-300 hover:border-white/35 hover:bg-white/5 hover:text-white"
               >
-                Explore brands & tech
+                {tertiaryCta.label}
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </Link>
             </motion.div>

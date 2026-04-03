@@ -58,7 +58,7 @@ const brandMatrix = [
   },
   {
     category: "Minimal Interfaces",
-    brands: ["Basalte"],
+    brands: ["Basalte", "Black Nova"],
   },
 ];
 

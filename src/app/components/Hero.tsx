@@ -7,7 +7,7 @@ export function Hero() {
   return (
     <section
       id="hero"
-      className="relative flex min-h-screen items-center justify-center overflow-hidden bg-black"
+      className="relative flex min-h-screen items-end overflow-hidden bg-black"
     >
       {/* Background Media */}
       <div className="absolute inset-0">
@@ -27,52 +27,30 @@ export function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 mx-auto max-w-[1440px] px-8 py-28 lg:px-16 lg:py-40">
+      <div className="relative z-10 mx-auto w-full max-w-[1440px] px-8 py-20 lg:px-16 lg:py-24">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
-          className="max-w-5xl"
+          className="max-w-4xl"
         >
-          <div className="mb-8">
-            <span className="text-[12px] font-medium uppercase tracking-[0.22em] text-white/60">
-              Luxury Home Automation
-            </span>
-          </div>
-
-          {/* Headline */}
-          <h1 className="mb-10 max-w-4xl text-[44px] leading-[1.08] tracking-tight text-white sm:text-[56px] lg:text-[72px] font-medium">
+          <h1 className="mb-9 max-w-4xl text-[36px] font-medium leading-[1.05] tracking-tight text-white sm:text-[48px] lg:text-[64px]">
+            Luxury Home Automation
+            <br />
             Design-led smart living,
             <br />
             quietly integrated.
           </h1>
 
-          {/* Body Copy */}
-          <div className="mb-12 max-w-3xl space-y-6 text-[17px] font-normal leading-[1.8] text-white/74 lg:text-[18px]">
-            <p>
-              Smart Lit designs luxury smart home systems for villas in Abu
-              Dhabi and across the UAE, bringing lighting, climate, shading,
-              security, cinema, and audio into one calm experience.
-            </p>
-            <p>
-              Every detail is planned around the architecture. Controls feel
-              intuitive, technology recedes into the background, and daily life
-              becomes simpler, quieter, and more beautiful.
-            </p>
-            <p className="text-white/90 italic">
-              Intelligent comfort without visual noise.
-            </p>
-          </div>
-
           {/* CTAs */}
-          <div className="flex flex-col gap-4 sm:flex-row">
+          <div className="flex flex-col gap-3 sm:flex-row">
             <motion.div
               whileHover={{ x: 4 }}
               transition={{ duration: 0.3 }}
             >
               <Link
                 to="/contact"
-                className="group inline-flex items-center justify-center gap-2 bg-white px-8 py-4 text-[16px] font-medium tracking-[0.08em] text-black transition-all duration-300 hover:bg-white/90"
+                className="group inline-flex items-center justify-center gap-2 bg-white px-6 py-3.5 text-[14px] font-medium tracking-[0.08em] text-black transition-all duration-300 hover:bg-white/90"
               >
                 Book a private consultation
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -85,7 +63,7 @@ export function Hero() {
             >
               <Link
                 to="/solutions"
-                className="group inline-flex items-center justify-center gap-2 border border-white/15 bg-white/[0.02] px-8 py-4 text-[16px] font-medium tracking-[0.08em] text-white transition-all duration-300 hover:border-white/35 hover:bg-white/5"
+                className="group inline-flex items-center justify-center gap-2 border border-white/15 bg-white/[0.02] px-6 py-3.5 text-[14px] font-medium tracking-[0.08em] text-white transition-all duration-300 hover:border-white/35 hover:bg-white/5"
               >
                 Explore smart home solutions
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -100,7 +78,7 @@ export function Hero() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.5, duration: 1 }}
-        className="absolute bottom-12 left-1/2 -translate-x-1/2"
+        className="absolute bottom-12 right-8 lg:right-16"
       >
         <motion.div
           animate={{ y: [0, 8, 0] }}

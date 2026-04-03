@@ -11,7 +11,7 @@ import { CurtainsControl } from "../components/solutions/CurtainsControl";
 import { HvacControl } from "../components/solutions/HvacControl";
 import { SecurityIntegration } from "../components/solutions/SecurityIntegration";
 import { YachtAutomation } from "../components/solutions/YachtAutomation";
-import { SolutionsCTA } from "../components/solutions/SolutionsCTA";
+import { ConsultationCTA } from "../components/ConsultationCTA";
 import { Seo } from "../components/Seo";
 import {
   buildBreadcrumbSchema,
@@ -60,7 +60,9 @@ export function Solutions() {
         <HvacControl />
         <SecurityIntegration />
         <YachtAutomation />
-        <SolutionsCTA />
+        <ConsultationCTA
+          tertiaryCta={{ label: "Review project profiles", to: "/projects" }}
+        />
       </main>
       <Footer />
     </div>

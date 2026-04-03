@@ -1,5 +1,6 @@
 import { Header } from "../components/Header";
 import { Hero } from "../components/Hero";
+import { HomeValueProposition } from "../components/HomeValueProposition";
 import { LithomeShowcase } from "../components/LithomeShowcase";
 import { ConsultationCTA } from "../components/ConsultationCTA";
 import { Footer } from "../components/Footer";
@@ -28,6 +29,7 @@ export function Home() {
       <Header />
       <main id="main-content">
         <Hero />
+        <HomeValueProposition />
         <LithomeShowcase />
         <ConsultationCTA />
       </main>

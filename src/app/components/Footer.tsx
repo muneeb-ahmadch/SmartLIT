@@ -10,7 +10,7 @@ export function Footer() {
         {/* Main Footer Content */}
         <div className="grid md:grid-cols-12 gap-12 lg:gap-16 mb-20">
           {/* Brand Column */}
-          <div className="md:col-span-4">
+          <div className="md:col-span-3">
             <div className="mb-8">
               <span className="text-[28px] font-normal tracking-wider text-white">
                 Smart Lit
@@ -52,16 +52,16 @@ export function Footer() {
                 Solutions
               </Link>
               <Link
-                to="/projects"
-                className="text-[16px] font-normal text-white/72 hover:text-white transition-colors duration-300"
-              >
-                Projects
-              </Link>
-              <Link
                 to="/brands-technology"
                 className="text-[16px] font-normal text-white/72 hover:text-white transition-colors duration-300"
               >
                 Brands & Technology
+              </Link>
+              <Link
+                to="/projects"
+                className="text-[16px] font-normal text-white/72 hover:text-white transition-colors duration-300"
+              >
+                Projects
               </Link>
               <Link
                 to="/contact"
@@ -73,41 +73,58 @@ export function Footer() {
           </div>
 
           {/* Solutions Column */}
-          <div className="md:col-span-3">
+          <div className="md:col-span-2">
             <h3 className="text-[12px] tracking-[0.15em] uppercase text-white/56 font-normal mb-6">
               Solutions
             </h3>
             <nav className="flex flex-col gap-3">
-              <Link
-                to="/solutions"
-                className="text-[16px] font-normal text-white/72 hover:text-white transition-colors duration-300"
-              >
-                Home Automation
-              </Link>
-              <Link
-                to="/solutions"
-                className="text-[16px] font-normal text-white/72 hover:text-white transition-colors duration-300"
-              >
-                Home Cinema Design
-              </Link>
-              <Link
-                to="/solutions"
-                className="text-[16px] font-normal text-white/72 hover:text-white transition-colors duration-300"
-              >
-                Multiroom Audio
-              </Link>
-              <Link
-                to="/solutions"
-                className="text-[16px] font-normal text-white/72 hover:text-white transition-colors duration-300"
-              >
-                Lighting Control
-              </Link>
-              <Link
-                to="/brands-technology"
-                className="text-[16px] font-normal text-white/72 hover:text-white transition-colors duration-300"
-              >
-                Basalte & Crestron
-              </Link>
+              {[
+                "Home Automation",
+                "Home Cinema Design",
+                "Multiroom Audio",
+                "Media & Video Distribution",
+                "Lighting Control",
+                "Curtains Control",
+                "HVAC Control",
+                "Security Integration",
+                "Yacht Automation",
+              ].map((solution) => (
+                <Link
+                  key={solution}
+                  to="/solutions"
+                  className="text-[16px] font-normal text-white/72 hover:text-white transition-colors duration-300"
+                >
+                  {solution}
+                </Link>
+              ))}
+            </nav>
+          </div>
+
+          {/* Brands & Tech Column */}
+          <div className="md:col-span-2">
+            <h3 className="text-[12px] tracking-[0.15em] uppercase text-white/56 font-normal mb-6">
+              Brands & Tech
+            </h3>
+            <nav className="flex flex-col gap-3">
+              {[
+                "Crestron",
+                "Basalte",
+                "Blustream",
+                "Denon",
+                "Marantz",
+                "Polk Audio",
+                "Definitive Technology",
+                "JVC",
+                "Black Nova",
+              ].map((brand) => (
+                <Link
+                  key={brand}
+                  to="/brands-technology"
+                  className="text-[16px] font-normal text-white/72 hover:text-white transition-colors duration-300"
+                >
+                  {brand}
+                </Link>
+              ))}
             </nav>
           </div>
 

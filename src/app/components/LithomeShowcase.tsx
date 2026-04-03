@@ -616,7 +616,7 @@ export function LithomeShowcase() {
           initial={{ opacity: 0, y: 40 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="relative left-1/2 mb-20 w-screen -translate-x-1/2 overflow-hidden text-center"
+          className="relative left-1/2 mb-20 w-screen -translate-x-1/2 overflow-hidden"
         >
           <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-90"
@@ -629,15 +629,15 @@ export function LithomeShowcase() {
           <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(0,0,0,0.92)_0%,rgba(0,0,0,0.5)_18%,rgba(0,0,0,0.12)_40%,rgba(0,0,0,0.12)_60%,rgba(0,0,0,0.5)_82%,rgba(0,0,0,0.92)_100%)]" />
           <div className="absolute inset-0 bg-gradient-to-r from-black/18 via-transparent to-black/18" />
           <div className="relative mx-auto max-w-[1440px] px-8 py-24 lg:px-16 lg:py-32">
-            <div className="mb-6">
+            <div className="mb-6 text-center">
               <span className="text-[12px] font-medium uppercase tracking-[0.2em] text-white/60">
                 Unified Control
               </span>
             </div>
-            <h2 className="mb-10 text-[38px] font-medium leading-[1.12] tracking-tight text-white sm:text-[44px] lg:text-[56px]">
+            <h2 className="mb-10 text-center text-[38px] font-medium leading-[1.12] tracking-tight text-white sm:text-[44px] lg:text-[56px]">
               One interface for the way you live.
             </h2>
-            <div className="mx-auto max-w-3xl space-y-6 text-[17px] font-normal leading-[1.8] text-white/72 lg:text-[18px]">
+            <div className="mx-auto max-w-3xl space-y-6 text-left text-[17px] font-normal leading-[1.8] text-white/72 lg:text-[18px]">
               <p>
                 The best smart home technology is not defined by how much it can
                 do. It is defined by how little effort it asks from you.

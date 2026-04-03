@@ -7,7 +7,7 @@ import { FeaturedResidential } from "../components/projects/FeaturedResidential"
 import { YachtProjects } from "../components/projects/YachtProjects";
 import { FeaturedYacht } from "../components/projects/FeaturedYacht";
 import { TechnologyPreview } from "../components/projects/TechnologyPreview";
-import { ProjectsCTA } from "../components/projects/ProjectsCTA";
+import { ConsultationCTA } from "../components/ConsultationCTA";
 import { Seo } from "../components/Seo";
 import {
   buildBreadcrumbSchema,
@@ -45,7 +45,9 @@ export function Projects() {
         <YachtProjects />
         <FeaturedYacht />
         <TechnologyPreview />
-        <ProjectsCTA />
+        <ConsultationCTA
+          tertiaryCta={{ label: "Explore our solutions", to: "/solutions" }}
+        />
       </main>
       <Footer />
     </div>

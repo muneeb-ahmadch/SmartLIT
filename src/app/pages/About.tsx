@@ -7,7 +7,7 @@ import { EngineeringExpertise } from "../components/about/EngineeringExpertise";
 import { Collaboration } from "../components/about/Collaboration";
 import { FounderStory } from "../components/about/FounderStory";
 import { BrandValues } from "../components/about/BrandValues";
-import { AboutCTA } from "../components/about/AboutCTA";
+import { ConsultationCTA } from "../components/ConsultationCTA";
 import { Seo } from "../components/Seo";
 import {
   buildBreadcrumbSchema,
@@ -47,7 +47,9 @@ export function About() {
         <Collaboration />
         <FounderStory />
         <BrandValues />
-        <AboutCTA />
+        <ConsultationCTA
+          tertiaryCta={{ label: "Review our projects", to: "/projects" }}
+        />
       </main>
       <Footer />
     </div>
