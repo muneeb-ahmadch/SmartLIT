@@ -3,20 +3,20 @@ import { useRef } from "react";
 
 const brandGroups = [
   {
-    title: "Automation Core",
+    title: "Control & Signal Flow",
     brands: ["Crestron", "Blustream"],
   },
   {
-    title: "Cinema Performance",
-    brands: ["Marantz", "Denon", "JVC Projectors"],
-  },
-  {
     title: "Architectural Interfaces",
-    brands: ["Black Nova", "Basalte"],
+    brands: ["Basalte", "BlackNova"],
   },
   {
-    title: "Distributed Audio",
-    brands: ["Polk Audio", "Definitive Technology"],
+    title: "Amplification & Processing",
+    brands: ["Marantz", "Denon"],
+  },
+  {
+    title: "Speakers & Projection",
+    brands: ["Uandksound", "Polk Audio", "JVC"],
   },
 ];
 

@@ -45,20 +45,20 @@ const featuredBrands: FeaturedBrand[] = [
 
 const brandMatrix = [
   {
+    category: "Control & Signal Flow",
+    brands: ["Crestron", "Blustream"],
+  },
+  {
+    category: "Architectural Interfaces",
+    brands: ["Basalte", "BlackNova"],
+  },
+  {
     category: "Amplification & Processing",
     brands: ["Marantz", "Denon"],
   },
   {
-    category: "Architectural Audio",
-    brands: ["Polk Audio", "Definitive Technology"],
-  },
-  {
-    category: "Projection",
-    brands: ["JVC Projectors"],
-  },
-  {
-    category: "Minimal Interfaces",
-    brands: ["Basalte", "Black Nova"],
+    category: "Speakers & Projection",
+    brands: ["Uandksound", "Polk Audio", "JVC"],
   },
 ];
 

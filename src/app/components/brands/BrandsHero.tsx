@@ -1,9 +1,12 @@
 import { motion } from "motion/react";
 
 const highlights = [
-  { label: "Control", value: "Crestron" },
-  { label: "Architectural Interfaces", value: "Basalte, Black Nova" },
-  { label: "Cinema & AV", value: "JVC, Marantz, Denon" },
+  { label: "Control & Signal Flow", value: "Crestron, Blustream" },
+  { label: "Architectural Interfaces", value: "Basalte, BlackNova" },
+  {
+    label: "Cinema & AV",
+    value: "Marantz, Denon, Uandksound, Polk Audio, JVC",
+  },
 ];
 
 export function BrandsHero() {

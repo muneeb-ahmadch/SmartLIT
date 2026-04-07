@@ -63,7 +63,7 @@ export function BrandsTechnology() {
         "High-performance speakers designed for natural, immersive sound experiences.",
     },
     {
-      name: "Definitive Technology",
+      name: "Uandksound",
       description:
         "Powerful, elegant loudspeakers with architectural integration and acoustic precision.",
     },

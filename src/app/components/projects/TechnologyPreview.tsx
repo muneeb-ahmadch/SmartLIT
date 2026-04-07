@@ -14,7 +14,7 @@ export function TechnologyPreview() {
     "Denon",
     "Marantz",
     "Polk Audio",
-    "Definitive Technology",
+    "Uandksound",
     "JVC",
     "Black Nova",
     "Basalte",

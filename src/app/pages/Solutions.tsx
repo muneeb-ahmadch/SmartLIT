@@ -60,9 +60,7 @@ export function Solutions() {
         <HvacControl />
         <SecurityIntegration />
         <YachtAutomation />
-        <ConsultationCTA
-          tertiaryCta={{ label: "Review project profiles", to: "/projects" }}
-        />
+        <ConsultationCTA />
       </main>
       <Footer />
     </div>

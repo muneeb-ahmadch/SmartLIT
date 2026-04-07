@@ -5,21 +5,7 @@ import { ArrowRight } from "lucide-react";
 import { Link } from "react-router";
 import { SITE_EMAIL } from "../lib/site";
 
-type ConsultationCTAProps = {
-  tertiaryCta?: {
-    label: string;
-    to: string;
-  };
-};
-
-const defaultTertiaryCta = {
-  label: "Explore brands & tech",
-  to: "/brands-technology",
-};
-
-export function ConsultationCTA({
-  tertiaryCta = defaultTertiaryCta,
-}: ConsultationCTAProps) {
+export function ConsultationCTA() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
@@ -83,18 +69,6 @@ export function ConsultationCTA({
                 className="group inline-flex min-w-[220px] items-center justify-center gap-3 border border-white/15 bg-white/[0.03] px-8 py-4 text-[16px] font-medium tracking-[0.08em] text-white transition-all duration-300 hover:border-white/35 hover:bg-white/5"
               >
                 Contact Smart Lit
-                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-              </Link>
-            </motion.div>
-            <motion.div
-              whileHover={{ x: 4 }}
-              transition={{ duration: 0.3 }}
-            >
-              <Link
-                to={tertiaryCta.to}
-                className="group inline-flex min-w-[220px] items-center justify-center gap-3 border border-white/15 bg-transparent px-8 py-4 text-[16px] font-medium tracking-[0.08em] text-white/88 transition-all duration-300 hover:border-white/35 hover:bg-white/5 hover:text-white"
-              >
-                {tertiaryCta.label}
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </Link>
             </motion.div>

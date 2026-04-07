@@ -15,7 +15,7 @@ const brandsSchema = [
   buildCollectionPageSchema({
     name: "Brands & Technology",
     description:
-      "Discover the design-led technology partners Smart Lit specifies for luxury villas, including Basalte, Crestron, JVC, Marantz, and more.",
+      "Discover the design-led technology partners Smart Lit specifies for luxury villas, including Crestron, Blustream, Basalte, BlackNova, Marantz, Denon, Uandksound, Polk Audio, and JVC.",
     path: "/brands-technology",
   }),
   buildBreadcrumbSchema([
@@ -29,7 +29,7 @@ export function BrandsTechnologyPage() {
     <div className="min-h-screen bg-black">
       <Seo
         title="Basalte, Crestron & Luxury Smart Home Brands Abu Dhabi"
-        description="Smart Lit specifies Basalte, Crestron, JVC, Marantz, Black Nova, and other premium technology brands for design-led smart homes in Abu Dhabi and the UAE."
+        description="Smart Lit specifies Crestron, Blustream, Basalte, BlackNova, Marantz, Denon, Uandksound, Polk Audio, and JVC for design-led smart homes in Abu Dhabi and the UAE."
         path="/brands-technology"
         schema={brandsSchema}
       />

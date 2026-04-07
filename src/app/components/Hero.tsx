@@ -35,11 +35,11 @@ export function Hero() {
           className="max-w-4xl"
         >
           <h1 className="mb-9 max-w-4xl text-[36px] font-medium leading-[1.05] tracking-tight text-white sm:text-[48px] lg:text-[64px]">
-            Luxury Home Automation
+            Smart Homes.
             <br />
-            Design-led smart living,
+            Private Cinemas. Yachts.
             <br />
-            quietly integrated.
+            Quietly integrated.
           </h1>
 
           {/* CTAs */}

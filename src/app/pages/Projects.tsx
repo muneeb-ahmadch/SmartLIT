@@ -45,9 +45,7 @@ export function Projects() {
         <YachtProjects />
         <FeaturedYacht />
         <TechnologyPreview />
-        <ConsultationCTA
-          tertiaryCta={{ label: "Explore our solutions", to: "/solutions" }}
-        />
+        <ConsultationCTA />
       </main>
       <Footer />
     </div>

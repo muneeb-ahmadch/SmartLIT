@@ -47,9 +47,7 @@ export function About() {
         <Collaboration />
         <FounderStory />
         <BrandValues />
-        <ConsultationCTA
-          tertiaryCta={{ label: "Review our projects", to: "/projects" }}
-        />
+        <ConsultationCTA />
       </main>
       <Footer />
     </div>

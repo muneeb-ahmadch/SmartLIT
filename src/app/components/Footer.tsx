@@ -108,14 +108,14 @@ export function Footer() {
             <nav className="flex flex-col gap-3">
               {[
                 "Crestron",
-                "Basalte",
                 "Blustream",
-                "Denon",
+                "Basalte",
+                "BlackNova",
                 "Marantz",
+                "Denon",
+                "Uandksound",
                 "Polk Audio",
-                "Definitive Technology",
                 "JVC",
-                "Black Nova",
               ].map((brand) => (
                 <Link
                   key={brand}

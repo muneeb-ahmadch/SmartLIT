@@ -15,11 +15,26 @@ const projectTypeOptions = [
 ] as const;
 
 const messagePrompts = [
-  "Lighting, shading, climate and cinema integration for a new villa",
-  "Upgrade an existing Crestron or Basalte system",
-  "Whole-home smart control with discreet premium finishes",
-  "Audio, security and lighting for a yacht or second residence",
-  "Need a site visit and concept proposal for a high-end home",
+  {
+    label: "New villa: lighting, shading, climate...",
+    value: "Lighting, shading, climate and cinema integration for a new villa",
+  },
+  {
+    label: "Upgrade an existing Crestron or Basalte...",
+    value: "Upgrade an existing Crestron or Basalte system",
+  },
+  {
+    label: "Whole-home control with discreet finishes",
+    value: "Whole-home smart control with discreet premium finishes",
+  },
+  {
+    label: "Yacht or second residence: audio, security...",
+    value: "Audio, security and lighting for a yacht or second residence",
+  },
+  {
+    label: "Site visit and concept proposal...",
+    value: "Need a site visit and concept proposal for a high-end home",
+  },
 ] as const;
 
 type FormValues = {
@@ -199,13 +214,19 @@ export function InquiryForm() {
 
   return (
     <div className="rounded-[34px] border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.06),rgba(255,255,255,0.03))] p-6 shadow-[0_30px_80px_rgba(0,0,0,0.28)] backdrop-blur-md sm:p-8 lg:p-10">
-      <div className="flex flex-col gap-6 border-b border-white/10 pb-8">
+      <div className="border-b border-white/10 pb-8">
         <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
           <div className="max-w-2xl">
-            <p className="text-[12px] uppercase tracking-[0.22em] text-white/52">
-              Private enquiry
-            </p>
-            <h2 className="mt-4 text-[30px] font-medium tracking-tight text-white sm:text-[38px]">
+            <div className="flex flex-wrap items-center gap-4">
+              <p className="text-[12px] uppercase tracking-[0.22em] text-white/56">
+                Contact
+              </p>
+              <span className="hidden h-px w-14 bg-white/14 sm:block" />
+              <p className="text-[12px] uppercase tracking-[0.18em] text-white/34">
+                Abu Dhabi | Villas | Yachts | Private Residences
+              </p>
+            </div>
+            <h2 className="mt-5 text-[30px] font-medium tracking-tight text-white sm:text-[38px]">
               Outline the brief. We will shape the next conversation.
             </h2>
           </div>
@@ -213,33 +234,6 @@ export function InquiryForm() {
             The form is intentionally concise. A few clear details are enough
             for an informed response.
           </p>
-        </div>
-
-        <div className="grid gap-4 sm:grid-cols-3">
-          <div className="rounded-[22px] border border-white/8 bg-black/20 px-5 py-4">
-            <p className="text-[12px] uppercase tracking-[0.18em] text-white/45">
-              Region
-            </p>
-            <p className="mt-2 text-[18px] font-medium text-white">
-              Abu Dhabi, Dubai, UAE
-            </p>
-          </div>
-          <div className="rounded-[22px] border border-white/8 bg-black/20 px-5 py-4">
-            <p className="text-[12px] uppercase tracking-[0.18em] text-white/45">
-              Typical projects
-            </p>
-            <p className="mt-2 text-[18px] font-medium text-white">
-              Villas, penthouses, yachts
-            </p>
-          </div>
-          <div className="rounded-[22px] border border-white/8 bg-black/20 px-5 py-4">
-            <p className="text-[12px] uppercase tracking-[0.18em] text-white/45">
-              Coordination
-            </p>
-            <p className="mt-2 text-[18px] font-medium text-white">
-              Owners, architects, designers
-            </p>
-          </div>
         </div>
       </div>
 
@@ -351,45 +345,51 @@ export function InquiryForm() {
               Required
             </span>
           </div>
-          <Textarea
-            id="contact-message"
-            ref={textareaRef}
-            name="message"
-            value={values.message}
-            onChange={handleChange}
-            aria-invalid={Boolean(errors.message)}
-            aria-describedby={
-              errors.message ? "contact-message-error contact-message-help" : "contact-message-help"
-            }
-            placeholder="Tell us about the property, stage of the project, key spaces, and the systems you want coordinated."
-            className="min-h-[220px] rounded-[24px] border-white/10 bg-white/[0.03] px-5 py-4 text-[16px] leading-[1.75] text-white placeholder:text-white/28 focus-visible:border-[#b28a52] focus-visible:ring-[#b28a52]/25"
-          />
+          <div className="overflow-hidden rounded-[24px] border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.03),rgba(255,255,255,0.018))] transition-[border-color,box-shadow] focus-within:border-[#b28a52] focus-within:ring-4 focus-within:ring-[#b28a52]/20">
+            <Textarea
+              id="contact-message"
+              ref={textareaRef}
+              name="message"
+              value={values.message}
+              onChange={handleChange}
+              aria-invalid={Boolean(errors.message)}
+              aria-describedby={
+                errors.message ? "contact-message-error contact-message-help" : "contact-message-help"
+              }
+              placeholder="Tell us about the property, stage of the project, key spaces, and the systems you want coordinated."
+              className="min-h-[250px] rounded-none border-0 bg-transparent px-5 py-4 text-[16px] leading-[1.75] text-white placeholder:text-white/28 shadow-none focus-visible:border-transparent focus-visible:ring-0"
+            />
+            <div className="border-t border-white/8 bg-black/18 px-4 py-4">
+              <div className="mb-3">
+                <p className="text-[11px] uppercase tracking-[0.18em] text-white/42">
+                  Suggested prompts
+                </p>
+              </div>
+              <div className="overflow-x-auto pb-1">
+                <div className="grid min-w-max auto-cols-[minmax(220px,220px)] grid-flow-col grid-rows-2 gap-2 sm:auto-cols-[minmax(240px,240px)]">
+                  {messagePrompts.map((prompt) => (
+                    <button
+                      key={prompt.value}
+                      type="button"
+                      onClick={() => applyPrompt(prompt.value)}
+                      aria-label={prompt.value}
+                      className="min-h-[42px] rounded-[16px] border border-white/10 bg-white/[0.03] px-3 py-2 text-left text-[11px] leading-[1.35] text-white/76 transition-all duration-300 hover:border-white/24 hover:bg-white/[0.06] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#b28a52]/55 sm:text-[12px]"
+                    >
+                      {prompt.label}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
           <p id="contact-message-help" className="text-[13px] leading-[1.7] text-white/46">
-            Prompt ideas below can be used as a starting point and edited to suit the brief.
+            Prompt ideas can be selected, then edited to suit the brief.
           </p>
           {errors.message ? (
             <p id="contact-message-error" className="text-[13px] leading-[1.6] text-[#f1b7b7]">
               {errors.message}
             </p>
           ) : null}
-        </div>
-
-        <div className="space-y-4">
-          <p className="text-[12px] uppercase tracking-[0.2em] text-white/45">
-            Suggested prompts
-          </p>
-          <div className="flex flex-wrap gap-3">
-            {messagePrompts.map((prompt) => (
-              <button
-                key={prompt}
-                type="button"
-                onClick={() => applyPrompt(prompt)}
-                className="rounded-full border border-white/10 bg-white/[0.03] px-4 py-3 text-left text-[13px] leading-[1.5] text-white/76 transition-all duration-300 hover:border-white/24 hover:bg-white/[0.06] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#b28a52]/55"
-              >
-                {prompt}
-              </button>
-            ))}
-          </div>
         </div>
 
         {configurationMessage ? (
